@@ -1,0 +1,45 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Geben Sie eine Zeichenkette <code>line</code> und ein Muster <code>pattern</code> an und schreiben Sie eine Funktion, die die kleinste Teilzeichenkette von <code>line</code> findet, die mindestens alle Zeichen von <code>pattern</code> enthält (kann auch andere Zeichen enthalten). Die Reihenfolge der Zeichen in <code>line/pattern</code> spielt keine Rolle, wohl aber die Groß- und Kleinschreibung.
+</p>
+<p style="text-align: justify;">
+    Ihre Funktion sollte ein Tupel der Anfangs- und Endindizes von <code>line</code> zurückgeben, die das benötigte Fenster bilden (der rechte Rand ist ausgeschlossen). Wenn es keine solche Teilzeichenkette in <code>line</code> gibt, die zu <code>pattern</code> passt, geben Sie zurück <code>{% if is_js %}[-1, -1]{% else %}(-1, -1){% endif %}</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}min-window-substr.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei Zeichenketten <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Tupel aus zwei ganzen Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <ul>
+    <li><i>alle Buchstaben im Muster sind eindeutig.</i></li>
+    </ul>
+</p>
