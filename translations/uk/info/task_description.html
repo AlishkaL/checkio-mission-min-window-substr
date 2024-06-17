@@ -1,0 +1,45 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    За заданим рядком <code>line</code> та шаблоном <code>pattern</code> напишіть функцію, яка знаходить мінімальний підрядок вікна <code>line</code>, який містить принаймні всі символи з <code>pattern</code> (можуть бути й інші символи). Порядок символів у рядку <code>line/pattern</code> не має значення, але має значення регістр літер.
+</p>
+<p style="text-align: justify;">
+    Ваша функція повинна повернути кортеж початкового та кінцевого індексів <code>line</code>, які формують потрібне вікно (права межа не враховується). Якщо у <code>line</code> немає такого підрядка, який би відповідав <code>pattern</code>, поверніть <code>{% if is_js %}[-1, -1]{% else %}(-1, -1){% endif %}</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}min-window-substr.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Два рядки <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Кортеж з двох цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Умова:</strong>
+    <ul>
+    <li><i>усі літери у зразку унікальні.</i></li>
+    </ul>
+</p>
