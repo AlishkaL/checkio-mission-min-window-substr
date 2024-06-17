@@ -1,0 +1,45 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    给定一个字符串<code>line</code> 和一个模式<code>pattern</code> ，请编写一个函数，找出<code>line</code> 中至少包含<code>pattern</code> 中所有字符（也可能包含其他字符）的最小窗口子串。<code>line/pattern</code> 中字符的顺序并不重要，但字母的大小写很重要。
+</p>
+<p style="text-align: justify;">
+    您的函数应返回<code>line</code> 的起始索引和终止索引的元组，它们构成所需的窗口（右边界除外）。如果<code>line</code> 中没有与<code>pattern</code> 匹配的子串，则返回 <code>{% if is_js %}[-1, -1]{% else %}(-1, -1){% endif %}</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}min-window-substr.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>两个字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>两个整数的元组 <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+    <li><i>模式中的所有字母都是唯一的。</i></li>
+    </ul>
+</p>
